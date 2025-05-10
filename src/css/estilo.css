@@ -1,0 +1,241 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#bodyHome{
+    font-family: Oswald, sans-serif;
+    background-image: url(/src/assets/fundo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    opacity: 95%;
+}
+
+.logo{
+    width: 400px;
+    height: 400px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content:space-around ;
+}
+
+li {
+    margin: 0 15px;
+}
+#inicio{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 99%;
+    transition: opacity 4s ease-in-out;
+}
+#titulo{
+    background-image: linear-gradient(to right,black,rgb(0, 0, 0));
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation:efeito 2s ease-in-out ;
+}
+
+#texto{
+    font-size: 2rem;
+    animation: efeito 4s ease-in-out;
+    opacity: 99%;
+    background-image: linear-gradient(to right,rgb(0, 0, 0),rgb(0, 0, 0));
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@keyframes efeito {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.inicio{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color:#f3f3f3;
+    font-weight: 1000;
+    font-family: Oswald, sans-serif;
+    font-size: 20px;
+}
+header nav ul li a:hover{
+    color:rgb(39, 32, 32);
+}
+
+footer{
+    display: flex;
+    color:#000000;
+    padding: 0px;
+    margin-top: auto;
+    font-family: Oswald, sans-serif;
+    background-position: center;
+    box-sizing: border-box;
+    justify-content: flex-end; /* direita */
+    align-items: flex-end; /* baixo */
+    padding: 20px;
+    margin-top: 500px
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    margin: 0 auto;
+    color: #f1f1f1;
+}
+
+
+.footer-content h3{
+    margin-bottom: 10px; 
+    margin-top: 100px;
+}
+
+.footer-content ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content li{
+    margin-bottom: 5px;
+}
+
+.footer-content a{
+    color:#f5f5f5;
+    text-decoration: none;
+}
+
+.footer-content{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+  
+}
+.redesSociais ul{
+    display: flex;
+}
+
+#cabecalhoDemaisPaginas nav ul{
+    list-style: none;
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: rgba(223, 121, 5, 0.767);
+}
+ #cabecalhoDemaisPaginas nav ul li a{
+    text-decoration: none;
+    color:#f3f3f3;
+    font-weight: 1000;
+    font-family: Oswald, sans-serif;
+    font-size: 20px;
+}
+#cabecalhoDemaisPaginas nav ul li a:hover{
+    color:rgb(197, 197, 197);
+}
+ #container-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+.contato {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.form article.control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    position: relative;
+    font-family: Oswald, sans-serif;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #24ac17;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #57c219;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #358d0d;
+}
+
+#tituloContato{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fdfdfd;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    padding-top: 100px;
+    font-family: Oswald, sans-serif;
+    
+}
