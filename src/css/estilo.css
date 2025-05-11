@@ -26,8 +26,14 @@
     margin: 0;
 }
 
-#bodySobre{
-    
+#bodyCardapio{
+    font-family: Oswald, sans-serif;
+    background-color: #3d3d3d;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
 }
 
 .logo{
@@ -135,6 +141,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: auto; /* Isso faz ele ficar sempre no final, sem sobrepor */
+    z-index: 1; /* Garante que não vai sobrepor conteúdo */
 }
 
 .footer-content{
@@ -190,7 +198,7 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 50px;
-    background-color: rgba(223, 121, 5, 0.767);
+    background-color: rgba(255, 5, 5, 0.767);
 }
  #cabecalhoDemaisPaginas nav ul li a{
     text-decoration: none;
@@ -245,7 +253,7 @@ input:focus, textarea:focus {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #57c219;
+    background-color: #fa1404;
     color: white;
     border: none;
     border-radius: 5px;
@@ -255,7 +263,7 @@ button {
 }
 
 button:hover {
-    background-color: #358d0d;
+    background-color: #aa0101;
 }
 
 #tituloContato{
@@ -353,8 +361,8 @@ main{
     font-size: 1.7rem;/*TAMANHO DA FONTE DE 1.7 -Rem é uma unidade de medida relativa em CSS que se baseia no tamanho da fonte do elemento raiz da  página */
 }
 /*ELEMENTO BUTTON*/
-button{
-    background: rgb(21, 255, 0);/*COR DO FUNDO*/
+#buttonCardapio{
+    background: rgb(255, 0, 0);/*COR DO FUNDO*/
     margin-top: 30px;/*MARGEM SUPERIOR DE 30px*/
     padding: 15px 45px;/*ESPAÇAMENTO DE 15PX (SUPERIOR e INFERIOR) E 45px ( DIREITA e ESQUERDA)*/
     border-radius: 20px;/*DEIXA OS CANTOS DAS BORDAS ARRENDODAS*/
@@ -362,7 +370,19 @@ button{
 }
 
 /*ELEMENTO BOTTOM COM EFEITO*/
-button:hover{
-    background: #006311;/*COR DO FUNDO*/
-    color:rgb(2, 175, 25);/*COR DA FONTE*/
+#buttonCardapio:hover{
+    background: #940000;/*COR DO FUNDO*/
+    color:rgb(255, 255, 255);/*COR DA FONTE*/
+}
+
+#cardapio {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#cardapio h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
 }
