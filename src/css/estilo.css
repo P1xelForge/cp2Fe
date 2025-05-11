@@ -312,3 +312,57 @@ body {
   background-color: rgba(0, 0, 0, 0.5)
   
 }
+
+#conteudo{
+    display: grid; /*TRANSFORMA UM ELEMENTO EM UM CONTAINER DE GRADE, ORGANIZADO OS ELEMENTOS EM LINHAS E COLUNAS*/
+    grid-template-columns: 1fr 200px; /*DIVIDE EM UMA COLUNA  COM 1 FRAÇÃO DE LARGURA E 200px de ALTURA*/
+    gap:20px; /*ESPAÇAMENTO ENTRE OS ELEMENTOS DE 20PX*/
+    
+}
+
+/*ELEMENTO MAIN*/
+main{
+    display: flex;/*DEIXA O CONTEUDO UM DO LADO DO OUTRO FLEXIVEL*/
+    flex-wrap: wrap; /*PERMITE QUE OS ITEMS FLEXIVEIS QUEBREM DE LINHA SE NÃO HOUVER ESPAÇO NA MESMA LINHA */
+    justify-content: center; /*JUSTIFICA O CONTEUDO AO CENTRO*/
+
+}
+/*CLASS PRODUTO*/
+.produto{
+    width: 200px;/*LARGURA de 200px*/
+    height: 500px; /*ALTURA de 400px*/
+    margin: 20px;/*MARGEM EM TODOS OS LADOS DE 20px*/
+    padding: 20px;/*ESPAÇAMENTO INTERNO EM TODOS OS LADOS DE 20px*/
+    border: 1px solid #ddd;/*CRIA UMA BORDA COM 1px de ESPESSURA COM A COR CINZA*/
+    background-image: linear-gradient(#000000,#000000,#000000);/*FAZ UM DEGRADE NO FUNDO DO CARD*/
+    color:#fff;/*COR DA FONTE*/
+    border-radius: 20px;/* DEIXA O CARD COM AS BORDAS ARRENDODAS*/
+}
+/*CLASS PRODUTO E ELEMENTO IMG*/
+.produto img{
+    max-width: 100%;/* MAXIMO DE LARGURA DA IMAGEM*/
+    height: 200px;/* ALTURA AUTOMATICA, MAS PODE COLOCAR EM PX EX: 400px*/
+    width: 200px;
+    margin-bottom: 10px;/*MARGEM INFERIOR DE 10PX*/
+}
+/*CLASS PRECO*/
+.preco{
+    font-weight: 700;/*DEIXAR O TEXTO EM NEGRITO*/
+    margin-top: 50px;/*ESPAÇO SUPERIOR DE 50PX*/
+    color:rgb(255, 255, 255);/*COR DA FONTE*/
+    font-size: 1.7rem;/*TAMANHO DA FONTE DE 1.7 -Rem é uma unidade de medida relativa em CSS que se baseia no tamanho da fonte do elemento raiz da  página */
+}
+/*ELEMENTO BUTTON*/
+button{
+    background: rgb(21, 255, 0);/*COR DO FUNDO*/
+    margin-top: 30px;/*MARGEM SUPERIOR DE 30px*/
+    padding: 15px 45px;/*ESPAÇAMENTO DE 15PX (SUPERIOR e INFERIOR) E 45px ( DIREITA e ESQUERDA)*/
+    border-radius: 20px;/*DEIXA OS CANTOS DAS BORDAS ARRENDODAS*/
+    cursor: pointer;/*AO COLOCAR O MOUSE EM CIMA DO BOTÃO VIRA UMA MÃOZINHA*/
+}
+
+/*ELEMENTO BOTTOM COM EFEITO*/
+button:hover{
+    background: #006311;/*COR DO FUNDO*/
+    color:rgb(2, 175, 25);/*COR DA FONTE*/
+}
