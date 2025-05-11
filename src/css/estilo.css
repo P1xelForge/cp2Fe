@@ -16,6 +16,16 @@
     opacity: 95%;
 }
 
+#bodyContato{
+    font-family: Oswald, sans-serif;
+    background-color: grey;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
 .logo{
     width: 400px;
     height: 400px;
@@ -112,6 +122,12 @@ footer{
     align-items: flex-end; /* baixo */
     padding: 20px;
     margin-top: 500px
+}
+#footerDemaisPaginas{
+    height: 20px;
+    text-align: center;
+    padding: 20x;
+    margin-top: 0px;
 }
 
 .footer-content{
