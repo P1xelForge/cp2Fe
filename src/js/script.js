@@ -10,3 +10,7 @@ window.onload = function(){
         },1000)
     },3000)
 }
+    document.body.classList.add('loading');
+    setTimeout(() => {
+  document.body.classList.remove('loading');
+}, 4000);
