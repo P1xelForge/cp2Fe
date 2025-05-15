@@ -17,6 +17,8 @@ display: grid; grid-template-rows: 1fr auto;
     height: 100vh;
     margin: 0;
     opacity: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 #bodyContato{
@@ -27,6 +29,8 @@ display: grid; grid-template-rows: 1fr auto;
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0;
+    position: relative;
+    z-index: 1;
 }
 
 #bodyCardapio{
@@ -48,6 +52,8 @@ display: grid; grid-template-rows: 1fr auto;
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0;
+    position: relative;
+    z-index: 1;
 
 }
 ul {
@@ -188,6 +194,8 @@ footer{
 .footer-content{
     background-color: #1c1e35;
     display: flex;
+    position: relative;
+    z-index: 999;
 
 }
 
@@ -224,6 +232,8 @@ footer{
 .redesSociais{
     text-align: center;
     text-shadow: 1px 1px 4px #000;
+    position: relative;
+    z-index: 999;
 }
 
  #container-contato {
@@ -231,6 +241,7 @@ footer{
     justify-content: center;
     align-items: center;
     height: 75vh;
+    z-index: 1;
 }
 .contato {
     padding: 20px;
@@ -529,3 +540,63 @@ main2 h4 {
 .direitos{
     color: white;
 }
+.indexbody, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+ }
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4); /* escurece para legibilidade */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 1px 1p 4px #181f3b;
+}
+.hero p {
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-shadow: 1px 1p 4px #181f3b;
+}
+.cta-button {
+    font-family: "Lato", sans-serif;
+    margin-top: 2rem;
+    padding: 12px 24px;
+    background-color: #181f3b;
+    color:  white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    }

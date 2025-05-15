@@ -8,9 +8,9 @@ window.onload = function(){
             content.classList.remove("hidden")
             content.classList.add("efeito-in")
         },1000)
-    },3000)
+    },2000)
 }
     document.body.classList.add('loading');
     setTimeout(() => {
   document.body.classList.remove('loading');
-}, 4000);
+}, 3000);
